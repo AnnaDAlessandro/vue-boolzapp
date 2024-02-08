@@ -170,7 +170,8 @@ createApp({
        ],
        
        activeChat: 0,
-       newText:''
+       newText:'',
+       searchText:''
       };
     },
     created(){
@@ -197,5 +198,14 @@ createApp({
           });
         }, 1000);
       },
-    },
+      searchContacts(){
+        this.contacts.forEach(element => {
+          if (element.name.toLowerCase().includes(this.searchText.toLowerCase())) {
+            element.visible = true;
+          } else {
+            element.visible = false;
+          }
+        });
+      }
+    }
   }).mount('#app');
