@@ -24,7 +24,9 @@ body {
 .fa-message,
 .fa-ellipsis-vertical,
 .fa-magnifying-glass,
-.fa-paperclip{
+.fa-paperclip,
+.fa-microphone,
+.fa-face-smile{
   color: #b1b1b1;
   width: 20px;
 }
@@ -59,8 +61,21 @@ body {
 #ultimo-messaggio span,
 #chat #orario-accesso span{
   font-size: 13px;
- color:gray;
+  color:gray;
 }
 #col-right-chat{
   background-image:url(img/mine.jpg);
+}
+#message-chat{
+background-color:#d5f9ba;
+width: 300px;
+}
+#message-chat span,
+#message-chat-1 span{
+  font-size: 13px;
+  color:gray;
+}
+#message-chat-1{
+  background-color: white;
+  width: 250px;
 }
