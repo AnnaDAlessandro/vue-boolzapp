@@ -4,7 +4,8 @@ const { createApp } = Vue
 createApp({
     data() {
       return {
-        contacts: [{
+        contacts: [
+          {
           name: 'Michele',
           avatar: '_1',
           visible: true,
@@ -165,14 +166,19 @@ createApp({
           }
           ],
           }
-          ] 
-
-      } 
+          ,
+       ],
+       
+       activeChat: 0,
+      };
     },
     created(){
   
     },
     methods:{
+      changeChat(index){
+        this.activeChat=index
+      }
   }
   }).mount('#app')
   

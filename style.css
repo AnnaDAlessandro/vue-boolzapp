@@ -65,12 +65,12 @@ body {
 #col-right-chat{
   background-image:url(img/mine.jpg);
 }
-#message-chat{
+.sent{
 background-color:#d5f9ba;
 width: 300px;
 }
-#message-chat span,
-#message-chat-1 span{
+.sent span,
+.received span{
   font-size: 13px;
   color:gray;
 }
