@@ -86,11 +86,11 @@
           <div class="d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center gap-2 p-2">
                 <figure id="avatar-2">
-                    <img src="img/avatar_1.jpg" alt="">
+                    <img :src="`./img/avatar${contacts[activeChat].avatar}.jpg`" alt="">
                  </figure>
                  <div id="ultimo-accesso">
                  <h6>{{contacts[activeChat].name}}</h6> 
-                 <span>Ultimo accesso oggi alle 12:00</span>  
+                 <span>Ultimo accesso oggi alle 12</span>  
                  </div>
               
          </div>
