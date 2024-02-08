@@ -170,15 +170,32 @@ createApp({
        ],
        
        activeChat: 0,
+       newText:''
       };
     },
     created(){
   
     },
-    methods:{
-      changeChat(index){
-        this.activeChat=index
-      }
-  }
-  }).mount('#app')
+    methods: {
+      changeChat(index) {
+        this.activeChat = index;
+      },
+      newMessage() {
+        this.contacts[this.activeChat].messages.push({
+          date: '10/01/2020 15:30:55',
+          message: this.newText,
+          status: 'sent',
+        });
   
+        this.newText = '';
+  
+        setTimeout(() => {
+          this.contacts[this.activeChat].messages.push({
+            date: '10/01/2020 16:15:22',
+            message: 'ok',
+            status: 'received',
+          });
+        }, 1000);
+      },
+    },
+  }).mount('#app');

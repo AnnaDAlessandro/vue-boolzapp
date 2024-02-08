@@ -127,6 +127,8 @@
           <div class="input-group p-2 g-0">
             <span class="input-group-text"><i class="fa-regular fa-face-smile"></i></span>
             <input type="text" 
+            @keyUp.enter="newMessage"
+            v-model="newText"
             class="form-control" 
             placeholder="Scrivi un messaggio"
             id="new-message"
