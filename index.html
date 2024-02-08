@@ -49,11 +49,15 @@
               </div>
               
            </div>
-           <div id="chat" class="d-flex flex-grow-1 justify-content-between overflow-y-scroll">
-            <div class="d-flex p-2 gap-2">
+           <div id="chat" 
+           v-for=""
+           class="d-flex flex-grow-1 overflow-y-scroll border">
+           <div class="w-100">
+            <div class=" d-flex justify-content-between ">
+              <div class="d-flex p-2 gap-2 ">
                 
                 <figure class="" id="avatar" >
-                    <img src="img/avatar_1.jpg" alt="">
+                     <img src="img/avatar_1.jpg" alt="">
                 </figure>
 
                 <div id="ultimo-messaggio">
@@ -63,10 +67,16 @@
                 </div>
             
             </div>
-           
-            <div class="d-flex justify-content-center p-2" id="orario-accesso">
-                <span>12:00</span>
+            <div class="d-flex ms-auto  p-2" id="orario-accesso">
+            <span>12:00</span>
+            </div> 
             </div>
+           </div>
+           
+            
+            
+           
+          
             </div>
                  
     </div>
