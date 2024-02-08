@@ -9,7 +9,9 @@ body {
   height: 100vh;
   font-family: sans-serif;
 }
-#avatar-io img{
+
+#avatar-io img,
+#avatar img{
   width:50px;
   height: 50px;
   border-radius: 50%;
@@ -42,4 +44,12 @@ body {
  font-size: 13px;
  color:gray;
  text-decoration:underline;
+}
+#chat{
+  border: 3px solid red;
+  height: 100%;
+}
+#chat span{
+  font-size: 13px;
+ color:gray;
 }
