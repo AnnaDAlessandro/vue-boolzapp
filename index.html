@@ -50,25 +50,26 @@
               
            </div>
            <div id="chat" 
-           v-for=""
-           class="d-flex flex-grow-1 overflow-y-scroll border">
+           class="d-flex flex-grow-1 border overflow-y-scroll">
            <div class="w-100">
-            <div class=" d-flex justify-content-between ">
+            <div 
+            v-for="(element,index) in contacts"
+            class=" d-flex justify-content-between ">
               <div class="d-flex p-2 gap-2 ">
                 
                 <figure class="" id="avatar" >
-                     <img src="img/avatar_1.jpg" alt="">
+                    <img :src="`./img/avatar${element.avatar}.jpg`" alt="">
                 </figure>
 
                 <div id="ultimo-messaggio">
-                    <h5>Michele</h5>
-                    <span>Ultimo messaggio inviato</span>
+                    <h5>{{element.name}}</h5>
+                    <span>{{element.messages[element.messages.length-1].message}}</span>
                     
                 </div>
             
             </div>
             <div class="d-flex ms-auto  p-2" id="orario-accesso">
-            <span>12:00</span>
+            <span>{{element.messages[element.messages.length-1].date}}</span>
             </div> 
             </div>
            </div>
