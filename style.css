@@ -9,9 +9,13 @@ body {
   height: 100vh;
   font-family: sans-serif;
 }
+#app{
+  height: 100vh;
+}
 
 #avatar-io img,
-#avatar img{
+#avatar img,
+#avatar-2 img{
   width:50px;
   height: 50px;
   border-radius: 50%;
@@ -19,8 +23,10 @@ body {
 .fa-circle-notch,
 .fa-message,
 .fa-ellipsis-vertical,
-.fa-magnifying-glass{
+.fa-magnifying-glass,
+.fa-paperclip{
   color: #b1b1b1;
+  width: 20px;
 }
 #part-right,
 #part-left{
@@ -46,10 +52,15 @@ body {
  text-decoration:underline;
 }
 #chat{
-  border: 3px solid red;
   height: 100%;
+  background-color: white;
 }
-#chat span{
+#ultimo-accesso span,
+#ultimo-messaggio span,
+#chat #orario-accesso span{
   font-size: 13px;
  color:gray;
+}
+#col-right-chat{
+  background-image:url(img/mine.jpg);
 }
